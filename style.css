@@ -1,0 +1,144 @@
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background-image: url('https://i.ibb.co/VWbXFvqZ/image.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 1.4;
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  background-color: #0d1b2a;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-header {
+  width: 140px;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
+
+.imgcentro {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff5c33;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+#sobreButton {
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+}
+
+#sobreButton:hover {
+  color: #ff5c33;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  margin: 50px auto;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  color: #0077ff;
+}
+
+p {
+  color: #c5c5c5;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: #ff5c33;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
+
+.circles-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 80px 20px;
+}
+
+.circle-card {
+  display: flex;              
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circle-card:hover {
+  transform: scale(1.05);
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle-card h3 {
+  color: #0077ff;
+}
+
+.circle-card:hover h3 {
+  color: #ff5c33;
+}
+
+.circle-card p {
+  color: #c5c5c5;
+  font-size: 14px;
+}
